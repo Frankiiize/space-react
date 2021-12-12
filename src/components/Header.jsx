@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { DataContext } from "../context/DataContext";
 
 const Header = () => {
@@ -7,9 +8,12 @@ const Header = () => {
     <header>
     <nav>
       <ul>
+      <li>
+        <Link to="/">home</Link>
+      </li>
         {pages.map((element, index) => (
           <li key={index}>
-            <a href={element}>{element}</a>
+            <Link to={element}>{element}</Link>
           </li>
         ))}
       </ul>
