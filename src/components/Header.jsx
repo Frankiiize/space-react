@@ -35,7 +35,9 @@ const Header = ({setBackground}) => {
       </>
       }
     <div className="navContainer__menuDesk">
-      <Nav/>
+      <Nav
+         setBackground={setBackground} 
+      />
     </div>
     </nav>
   </header>

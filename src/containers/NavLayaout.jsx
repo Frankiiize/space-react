@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import { BgLayaout } from "./BgLayaout";
 
 const NavLayaout = ({children}) => {
-  const [ backGround, setBackground ] = useState("home__Layaout");
+  const [ backGround, setBackground ] = useState(false);
   return(
     <>
       <Header

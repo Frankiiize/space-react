@@ -1,5 +1,5 @@
 @import   '../vars';
-main {
+.home__container {
   position: absolute;
   top: 96px;
   //height: 100%;
@@ -32,11 +32,13 @@ main {
     font-weight: 400;
     font-size: $fs-small-three;
     line-height: 25px;
+    font-family: $font-f-primary;
   }
   &-text{
     letter-spacing: 2.7px;
     font-size: $fs-small-three;
     text-transform: uppercase;
+    font-family: $font-f-tertiary;
   }
 }
 .btnContainer{
@@ -59,7 +61,7 @@ main {
   }
 }
 
-@media  (min-width: 375px) {
+@media  (min-width: 380px) {
   .home_Layaout {
     background-image: url('../../assets/home/background-home-tablet.jpg');
   }

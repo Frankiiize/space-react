@@ -18,7 +18,7 @@ const Nav = ({setBackground}) => {
         </li>
           {pages.map((element, index) => (
             <li key={index}>
-              <Link onClick={() => handleBackGround(element)} to={element}>{element}</Link>
+              <Link onClick={() => handleBackGround(element)} to={element}>{`${element}`}</Link>
             </li>
           ))}
       </ul>

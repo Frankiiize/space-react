@@ -3,7 +3,7 @@ import '../styles/pages/Home.scss'
 const Home = () => {
   return (
     <>
-        <main>
+        <main className="home__container">
           <div className="heroContainer">
             <h2 className="heroContainer-text"> So, you want to travel to</h2>
             <h1 className="heroContainer-title">space</h1>

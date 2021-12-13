@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from "react";
+
 const useGetData = () => {
   const [ state , setState ] = useState([]);
   const [ destinations, setDestinations ] = useState([])
@@ -26,7 +27,7 @@ const useGetData = () => {
       destinations,
       crew,
       tech,
-      pages
+      pages,
     }
 
 }

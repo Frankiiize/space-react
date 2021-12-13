@@ -7,7 +7,6 @@ import { DataProvider } from "./context/DataContext";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/Home.jsx";
 import { NavLayaout } from "./containers/NavLayaout";
-import { BgLayaout } from "./containers/BgLayaout";
 function App() {
   return (
     <>
