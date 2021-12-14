@@ -1,8 +1,7 @@
 @import   '../vars';
 .home__container {
-  position: absolute;
   top: 96px;
-  //height: 100%;
+  padding-top: 96px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -61,15 +60,3 @@
   }
 }
 
-@media  (min-width: 380px) {
-  .home_Layaout {
-    background-image: url('../../assets/home/background-home-tablet.jpg');
-  }
-  
-  
-}
-@media (min-width:768px){
-  .home_Layaout{
-    background-image: url('../../assets/home/background-home-desktop.jpg');
-  }
-}

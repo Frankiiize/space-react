@@ -1,8 +1,10 @@
 import React from "react";
+import { BgLayaout } from "../containers/BgLayaout";
 import '../styles/pages/Home.scss'
 const Home = () => {
   return (
     <>
+
         <main className="home__container">
           <div className="heroContainer">
             <h2 className="heroContainer-text"> So, you want to travel to</h2>

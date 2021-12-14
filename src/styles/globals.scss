@@ -5,3 +5,7 @@
   box-sizing: border-box;
   font-weight: normal;
 }
+.active {
+  border: none !important;
+  border-bottom: 3px solid white !important;
+}
