@@ -1,9 +1,187 @@
-.techContainer{
-  width: 100%;
-  min-height: 100vh;
-  background-image: url('../../assets/technology/background-technology-mobile.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@use '../layout/layout';
+@import   '../vars';
 
+.tech__container{
+  @extend %mainContainer;
+  &-title {
+    @extend %sectionPageTitle;
+    span{
+      opacity: 0.25;
+      margin-right: 5px;
+    }
+  }
+  &-img{
+    width: 100%;
+    min-height: 170px;
+    margin-top: 20px;
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.tech__card{
+  @extend %cardContainer;
+  &-selectBtn{
+    width: 50%;
+    max-width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &-btn {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255, 0.25);
+    color: $color-white;
+    button{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      color: inherit;
+      background-color: transparent;
+      border: none;
+      font-family: $font-f-secondary;
+      font-size: $fs-small-three;
+    }
+  }
+  &-description{
+    @extend  %descriptionContainer;
+    margin-top: 26px;
+    font-family: $font-f-secondary;
+    font-size: $fs-small-three;
+    color: $color-secondary;
+    text-align: center;
+    span{
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      letter-spacing: 2.36px;
+    }
+    h5{
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: $fs-big-headin5;
+      margin-bottom: 16px;
+    }
+    p{
+      font-size: $fs-small-three;
+      font-family: $font-f-primary;
+      line-height:167%;
+      text-align: center;
+      line-height: 25px;
+    }
+  }
+}
+
+
+@media  (min-width: 380px)  {
+  .tech__container{
+    &-title {
+      margin-top: 40px;
+      justify-self: flex-start;
+    }
+    &-img{
+      margin-top: 60px;
+    }
+    .tech__card{
+      margin-top: 60px;
+      max-width: 460px;
+      min-height: 240px;
+      &-selectBtn{
+        max-width: 300px;
+      }
+      &-btn{
+        width: 60px;
+        height: 60px;
+      }
+      &-description{
+        margin-top: 40px;
+      }
+    }
+  }
+  
+}
+@media (min-width:768px){
+  .tech__container{
+    min-height: 712px;
+    grid-template-columns: minmax(1fr,60px) 2fr auto ;
+    grid-template-rows: 60px 1fr;
+    &-title{
+      width: 100%;
+      grid-column: 2 / 4;
+      align-self: flex-start;
+      margin: 0;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      img{
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+      }
+    }
+    .tech__card {
+      width: 100%;
+      max-width: initial;
+      max-height: initial;
+      flex-direction: row;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin: 0;
+      justify-content: space-between;
+      &-selectBtn{
+        width: 20%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+      }
+      &-btn{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 32px;
+        button{
+          font-size: $fs-big-headin4;
+        }
+      }
+      &-description{
+        width: 100%;
+        height: 100%;
+        max-width: 470px;
+        max-height: 300px;
+        margin: 0;
+        align-items: flex-start;
+        p {
+          text-align: justify;
+        }
+        span{
+          font-size: $fs-small-three;
+        }
+        h5{
+          font-size: $fs-big-headin3;
+          text-align: justify;
+        }
+        p{
+          max-width: 440px;
+          font-size: $fs-small-two;
+          line-height: 32px;
+
+        }
+      }
+    }
+  }
 }

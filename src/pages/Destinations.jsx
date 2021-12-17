@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import '../styles/pages/destinations.scss'
 import { DataContext } from "../context/DataContext";
-import { BgLayaout } from "../containers/BgLayaout";
 
 const Destinations = () => {
   const { destinations } = useContext(DataContext);
@@ -10,7 +9,6 @@ const Destinations = () => {
     setElement(element.name)
   }
   const show = destinations.filter(e => e.name === element)
-  console.log(show)
   return (
     <>
 
@@ -22,6 +20,7 @@ const Destinations = () => {
           {show
             ? show.map((e, index) => (
                 <img
+                className="destination__container-img"
                   key={`Img-${index}-${e.name}`}
                   src={e.images.webp}
                   alt={e.name}
@@ -29,17 +28,17 @@ const Destinations = () => {
               ))
             : null}
         <div className="destination__containerCard">
-        <div className="destination__containerCard-btn">
-              {destinations.map((e, index) => (
-                <button
-                  className={e.name === element ? 'active' : null}
-                  key={`Dest-Element-${index}`}
-                  onClick={() => handleElement(e)}
-                >
-                  {e.name}
-                </button>
-              ))}
-        </div>
+          <div className="destination__containerCard-btn">
+                {destinations.map((e, index) => (
+                  <button
+                    className={e.name === element ? 'active' : null}
+                    key={`Dest-Element-${index}`}
+                    onClick={() => handleElement(e)}
+                  >
+                    {e.name}
+                  </button>
+                ))}
+          </div>
       
           {show
             ? show.map((e, index) => (

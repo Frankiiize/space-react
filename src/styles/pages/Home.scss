@@ -1,15 +1,13 @@
+@use '../layout/layout';
 @import   '../vars';
 .home__container {
-  top: 96px;
-  padding-top: 96px;
-  display: grid;
-  grid-template-columns: 1fr;
+  @extend %mainContainer;
   grid-template-rows: repeat(2, 1fr);
 }
 .heroContainer{
   width: 90%;
   height: 276px;
-  margin: 0 auto;
+  margin: 60px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,10 +32,7 @@
     font-family: $font-f-primary;
   }
   &-text{
-    letter-spacing: 2.7px;
-    font-size: $fs-small-three;
-    text-transform: uppercase;
-    font-family: $font-f-tertiary;
+    @extend %sectionPageTitle;
   }
 }
 .btnContainer{
@@ -57,6 +52,44 @@
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 1.25px;
+  }
+}
+
+@media  (min-width: 380px)  {
+  
+  .heroContainer{
+    height: 382px;
+    margin: 0;
+    height: 334px;
+    &-title{
+      font-size: $fs-big-headin1;
+    }
+    
+  }
+  .btnContainer{
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    &-mainBtn{
+      width: 242px;
+      height: 242px;
+      font-size: $fs-big-headin4;
+    }
+  }
+  
+}
+@media (min-width:768px){
+  .home__container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .heroContainer {
+    align-items: flex-start;
+    min-height: 382px;
+    &-description{
+      text-align: justify;
+    }
+
   }
 }
 

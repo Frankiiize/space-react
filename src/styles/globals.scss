@@ -5,7 +5,16 @@
   box-sizing: border-box;
   font-weight: normal;
 }
-.active {
-  border: none !important;
-  border-bottom: 3px solid white !important;
+div>button.active {
+  border: none ;
+  border-bottom: 3px solid white ;
+  
+}
+div>button.crewBtnActive{
+  opacity: 1 ;
+  background-color: $color-white ;
+}
+div.techBtnActive{
+  background-color: $color-white ;
+  color: $color-primary;
 }

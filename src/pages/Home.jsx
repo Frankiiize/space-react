@@ -1,5 +1,4 @@
 import React from "react";
-import { BgLayaout } from "../containers/BgLayaout";
 import '../styles/pages/Home.scss'
 const Home = () => {
   return (
