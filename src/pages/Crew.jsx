@@ -5,7 +5,6 @@ import { DataContext } from "../context/DataContext";
 const Crew = () => {
   const { crew } = useContext(DataContext)
   const [ element, setElement ] = useState('Douglas Hurley')
-  console.log(crew)
   const handleElement = (crew) => {
     setElement(crew.name)
   }

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import '../styles/pages/Home.scss'
 const Home = () => {
+  const history = useHistory();
+  const [ outLine, setOutLine ] = useState(false)
+
+  const handleFlow = () => {
+    setOutLine(true)
+    setTimeout(() => {
+      history.push("./destinations");
+      
+    },1000);
+  }
   return (
     <>
-
         <main className="home__container">
           <div className="heroContainer">
             <h2 className="heroContainer-text"> So, you want to travel to</h2>
@@ -15,7 +25,12 @@ const Home = () => {
             </p>
           </div>
           <div className="btnContainer">
-            <button className="btnContainer-mainBtn">explore</button>
+            <button
+              onClick={handleFlow}
+              className={`btnContainer-mainBtn ${outLine ? "activeMainBtn" : null } `}
+              >
+              explore
+            </button>
           </div>
         </main>
     </>
