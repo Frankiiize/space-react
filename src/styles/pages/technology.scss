@@ -157,6 +157,9 @@
         button{
           font-size: $fs-big-headin4;
         }
+        button:hover{
+          cursor: pointer;
+        }
       }
       &-description{
         width: 100%;

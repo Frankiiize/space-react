@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-weight: normal;
 }
+.activeNavlink {
+  border-bottom: 3px solid white ;
+  
+}
 div>button.active {
   border: none ;
   border-bottom: 3px solid white ;
@@ -17,4 +21,37 @@ div>button.crewBtnActive{
 div.techBtnActive{
   background-color: $color-white ;
   color: $color-primary;
+}
+div>button.activeMainBtn{
+  outline: 80px solid rgba(255,255,255, 0.1);
+  animation: splode 1000ms linear ;
+  border: none;
+
+}
+
+@keyframes splode {
+  0%{
+    color: $color-white;
+    background-color: $color-primary;
+    transform: rotate(0);
+    outline: 20px solid rgba(255,255,255, 0.1);
+  }
+  50%{
+    color: $color-white;
+    outline: 80px solid rgba(255,255,255, 0.1);
+  }
+  70%{
+    color: $color-white;
+    background-color: $color-primary;
+    outline: 100vw solid rgba(255,255,255, 0.1);
+  }
+  80%{
+    background-color: $color-secondary;
+    color: $color-white;
+    transform: rotate(360deg);
+  }
+  100%{
+    color: $color-white;
+    outline: 80px solid rgba(255,255,255, 0.1);
+  }
 }

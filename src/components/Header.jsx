@@ -7,8 +7,18 @@ import { Nav } from '../components/Nav.jsx'
 
 const Header = ({setBackground}) => {
   const [ showMobileMenu, setShowMobileMenu ] = useState(false);
+  const [ goinOut, setGoinOut ] = useState(false);
   const handleMenuMobile = () => {
-    setShowMobileMenu(!showMobileMenu)
+    //debugger
+    if(showMobileMenu){
+      setGoinOut(true);
+      setTimeout(() => {
+        setShowMobileMenu(!showMobileMenu);
+        setGoinOut(false)
+      },500);
+    }else {
+      setShowMobileMenu(!showMobileMenu);
+    }
   }
   return(
     <header>
@@ -23,9 +33,11 @@ const Header = ({setBackground}) => {
     }
     {!!showMobileMenu && 
       <>
-        <div className="navContainer__menuMobile-BG">
+        <div className={`navContainer__menuMobile-BG ${goinOut ? 'goingOut':null}`}>
           <div className="navContainer__menuMobile" >
-            <img onClick={handleMenuMobile} src={close} alt="close menu" />
+            <div className="navContainer__menuMobile-img">
+              <img onClick={handleMenuMobile} src={close} alt="close menu" />
+            </div>
             <ul>
               <Nav
               setBackground={setBackground} />

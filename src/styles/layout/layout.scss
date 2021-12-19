@@ -6,6 +6,7 @@
   padding-top: 96px;
   justify-items: center;
   color: $color-white;
+  animation: enterLayout 500ms linear;
 }
 %sectionPageTitle{
   font-weight: 400;
@@ -32,6 +33,14 @@
   align-items: center;
 }
 
+@keyframes enterLayout {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 @media  (min-width: 380px)  {
   %sectionPageTitle{

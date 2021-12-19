@@ -14,15 +14,15 @@ function App() {
     <DataProvider>
       <BrowserRouter>
         <NavLayaout>
-        <BgLayaout>
-
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/destinations" component={Destinations}/>
-            <Route exact path="/crew" component={Crew}/>
-            <Route exact path="/technology" component={Technology}/>
-          </Switch>
-        </BgLayaout>
+          <BgLayaout>
+            <Switch>
+              <Route exact path="/space-react/" component={Home} />
+              <Route exact path="/space-react/destinations" component={Destinations}/>
+              <Route exact path="/space-react/crew" component={Crew}/>
+              <Route exact path="/space-react/technology" component={Technology}/>
+              <Route path={"/*"} component={() => <div>not found</div>} />
+            </Switch>
+          </BgLayaout>
         </NavLayaout>
     </BrowserRouter>
     </DataProvider>
