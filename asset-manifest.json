@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/space-react/static/css/main.a39b818c.chunk.css",
+    "main.js": "/space-react/static/js/main.b07909e8.chunk.js",
+    "main.js.map": "/space-react/static/js/main.b07909e8.chunk.js.map",
+    "runtime-main.js": "/space-react/static/js/runtime-main.cdffb8a1.js",
+    "runtime-main.js.map": "/space-react/static/js/runtime-main.cdffb8a1.js.map",
+    "static/js/2.a49aeb12.chunk.js": "/space-react/static/js/2.a49aeb12.chunk.js",
+    "static/js/2.a49aeb12.chunk.js.map": "/space-react/static/js/2.a49aeb12.chunk.js.map",
+    "static/js/3.763aa060.chunk.js": "/space-react/static/js/3.763aa060.chunk.js",
+    "static/js/3.763aa060.chunk.js.map": "/space-react/static/js/3.763aa060.chunk.js.map",
+    "index.html": "/space-react/index.html",
+    "static/css/main.a39b818c.chunk.css.map": "/space-react/static/css/main.a39b818c.chunk.css.map",
+    "static/js/2.a49aeb12.chunk.js.LICENSE.txt": "/space-react/static/js/2.a49aeb12.chunk.js.LICENSE.txt",
+    "static/media/bg.scss": "/space-react/static/media/background-technology-tablet.48c38b02.jpg",
+    "static/media/icon-close.d47fda63.svg": "/space-react/static/media/icon-close.d47fda63.svg",
+    "static/media/icon-hamburger.5273efa7.svg": "/space-react/static/media/icon-hamburger.5273efa7.svg",
+    "static/media/logo.565f7f2c.svg": "/space-react/static/media/logo.565f7f2c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cdffb8a1.js",
+    "static/js/2.a49aeb12.chunk.js",
+    "static/css/main.a39b818c.chunk.css",
+    "static/js/main.b07909e8.chunk.js"
+  ]
+}
