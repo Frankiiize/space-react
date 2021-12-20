@@ -32,7 +32,7 @@ const Nav = ({setBackground}) => {
              
               <NavLink
                 activeClassName={screenWidth > 520 ? "activeNavlink" : null }
-                to={`/space-react/${element}`}
+                to={`/${element}`}
                 onClick={() => {
                   handleBackGround(element);
                   }} 

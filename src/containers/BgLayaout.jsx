@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import '../styles/containers/bg.scss'
 const BgLayaout = ({children, backGround}) => {
   const location = useLocation();
-  const defaulBg = location.pathname.replace('/space-react/','');
+  const defaulBg = location.pathname.replace('/','');
   console.log(defaulBg)
   return(
     <>
