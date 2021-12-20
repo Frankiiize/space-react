@@ -21,7 +21,7 @@ const Nav = ({setBackground}) => {
             exact 
             activeClassName={screenWidth > 520 ? "activeNavlink" : null }
             onClick={() => handleBackGround("home__Layaout")}  
-            to="/space-react/"
+            to="/"
             >
               <span>00</span>
               home
