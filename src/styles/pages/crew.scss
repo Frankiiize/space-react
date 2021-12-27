@@ -121,13 +121,13 @@
 
 @media (min-width:768px){
   .crew__container{
-    padding: 0;
+    padding-top: 135px;
     gap: 0;
     grid-template-columns: 60px 1fr 1fr 60px;
-    grid-template-rows: 60px 1fr 120px;
+    grid-template-rows: 60px 1fr 60px;
     &-title{
+      align-self: center;
       margin: 0;
-      align-self: flex-start;
       grid-column: 2 / 3;
       font-size: $fs-big-headin5;
       padding-left: 30px;
